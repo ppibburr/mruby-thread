@@ -51,7 +51,7 @@ assert('Thread migrates Fixnum') do
   a.join == 100
 end
 
-assert('Thread migrates ture') do
+assert('Thread migrates true') do
   a = Thread.new(true){|a| a}
   a.join == true
 end
